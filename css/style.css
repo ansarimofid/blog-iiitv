@@ -30,6 +30,56 @@
 body {
     font-family: 'Oxygen';
     text-align: center;
+    background-color: rgba(239, 243, 243, 1);
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.1;
+    display: block;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3.56em;
+    margin: 1.78em 0 1.424em 0;
+}
+
+h2 {
+    font-size: 2.92em;
+    margin: 1.46em 0 1.168em 0;
+}
+
+h3 {
+    font-size: 2.28em;
+    margin: 1.14em 0 0.912em 0;
+}
+
+h4 {
+    font-size: 1.64;
+    margin: 0.8em 0 0.656em 0;
+}
+
+h5 {
+    font-size: 1.3em;
+    margin: 0.65em 0 0.52em 0;
+}
+
+h6 {
+    font-size: 1em;
+    margin: 0.5em 0 0.4em 0;
 }
 
 .material-icons {
@@ -65,21 +115,25 @@ body {
 .brand-iiitv {
     font-family: 'Sacramento';
     font-size: 9em;
-    margin-bottom: 0px;
+    margin: 0px;
     color: rgb(255, 61, 0);
 }
 
 .brand-blog {
+    margin: 0px;
     margin-left: 0.3em;
-    margin-bottom: 0px;
     font-size: 3em;
     color: rgba(0, 0, 0, 0.7);
 }
 
 .brand-quote {
-    margin-top: -2.5em;
+    margin-top: -2.2em;
     font-size: 1.1em;
     color: rgba(0, 0, 0, 0.7);
+}
+
+header {
+    background-color: white;
 }
 
 nav {
@@ -100,6 +154,8 @@ nav {
 nav>ul>li>a {
     color: rgba(0, 0, 0, 0.7);
     font-size: 1.5em;
+    text-decoration: none;
+    display: block;
 }
 
 nav>ul>li>a:hover {
@@ -110,11 +166,78 @@ nav>ul>li>a:hover {
     background-color: rgba(239, 243, 243, 1);
 }
 
-nav>ul>li{
-    border-bottom: 3px solid transparent;
+nav>ul {
+    padding: 0;
+    margin: 0;
 }
+
+nav>ul>li {
+    border-bottom: 3px solid transparent;
+    display: inline-block;
+    padding: 0 1em;
+    transition: all 0.7s;
+}
+
 nav ul li:hover,
 nav ul li.active {
     background-color: transparent;
-    border-bottom: 3px solid rgba(0,0,0,0.3);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+.contents {
+    margin-top: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents .card {
+    display: flex;
+    width: 50em;
+    min-height: 25em;
+    background-color: white;
+    text-align: left;
+     justify-content: space-around;
+    flex-direction: column;
+}
+
+.card h2{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: rgba(255, 61, 0, 1);
+}
+
+.card,.card-content,{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-action{
+    align-items: center;
+    padding: 0.5em 4em;
+    display: flex;
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+.card-content{
+   padding: 2em 4em;
+}
+
+.card-content h5.more>a{
+    color: rgba(255, 61, 0, 1);
+    text-decoration: none;
+}
+.author{
+    display: flex;
+align-items: center;
+}
+.author img{
+    float: left;
+    border-radius: 4em;
+    width: 4.5em;
+    height: 4.5em;
+}
+
+.primary-color{
+     color: rgba(255, 61, 0, 1);
 }
