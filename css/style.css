@@ -1,3 +1,7 @@
+/**************
+** Font Used **
+**************/
+
 @font-face {
     font-family: 'Oxygen';
     src: url(../fonts/Oxygen/Oxygen-Regular.ttf);
@@ -27,6 +31,11 @@
     src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts/material-design-icons/Material-Design-Icons.woff2) format('woff2'), url(../fonts/material-design-icons/Material-Design-Icons.woff) format('woff'), url(../fonts/material-design-icons/Material-Design-Icons.ttf) format('truetype');
 }
 
+
+/******************
+** General Style **
+*******************/
+
 body {
     font-family: 'Oxygen';
     text-align: center;
@@ -35,6 +44,11 @@ body {
     font-size: 14px;
     line-height: 1.5;
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 h1,
@@ -82,6 +96,10 @@ h6 {
     margin: 0.5em 0 0.4em 0;
 }
 
+header {
+    background-color: white;
+}
+
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -99,6 +117,11 @@ h6 {
     /*    -webkit-font-smoothing:antialiased;*/
     text-rendering: optimizeLegibility;
 }
+
+
+/****************
+** Brand Style **
+*****************/
 
 .brand-container>div.brand {
     display: flex;
@@ -132,9 +155,10 @@ h6 {
     color: rgba(0, 0, 0, 0.7);
 }
 
-header {
-    background-color: white;
-}
+
+/*****************
+** Navbar Style **
+******************/
 
 nav {
     color: #fff;
@@ -184,6 +208,11 @@ nav ul li.active {
     border-bottom: 3px solid rgba(0, 0, 0, 0.3);
 }
 
+
+/*************************
+** Main container Style **
+**************************/
+
 .contents {
     margin-top: 4em;
     display: flex;
@@ -192,13 +221,18 @@ nav ul li.active {
     align-items: center;
 }
 
+
+/***************
+** Card Style **
+****************/
+
 .contents .card {
     display: flex;
     width: 50em;
     min-height: 25em;
     background-color: white;
     text-align: left;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-direction: column;
     margin-top: 3em;
     box-shadow: 0.15em 0.15em 0.3em rgba(0, 0, 0, 0.7);
@@ -260,23 +294,65 @@ nav ul li.active {
     color: rgba(255, 61, 0, 1);
 }
 
-.article-tag>ul {
+.article-tag>ul,
+.pagination>ul {
     margin: 0;
+    padding: 0;
 }
 
-.article-tag>ul>li {
+.article-tag>ul>li,
+.pagination>ul>li {
     list-style: none;
     display: inline-block;
-    /*    height: 3em;*/
-    /*    width: 4em;*/
     text-align: center;
+}
+
+.article-tag>ul>li>a,
+.pagination>ul>li>a {
+    text-decoration: none;
+    display: block;
 }
 
 .article-tag>ul>li>a {
     background-color: rgba(239, 243, 243, 1);
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.7);
-    display: block;
-    padding:0.5em 1em;
+    padding: 0.5em 1em;
     border-radius: 2em;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+/*************************
+** Pagination Style **
+**************************/
+
+.pagination {
+    margin: 2em 0;
+    font-size: 2em;
+}
+
+.pagination>ul>li {
+    margin: 0 0.3em;
+}
+
+.pagination>ul>li.active>a {
+    color: white;
+    padding: 0.25em 0.833em;
+    background-color: rgba(255, 61, 0, 1);
+    border-radius: 2em;
+}
+
+.pagination>ul>li>a {
+    color: rgba(255, 61, 0, 1);
+    font-weight: bold;
+}
+
+
+/*************************
+** footer Style **
+**************************/
+
+footer {
+    background-color: rgba(255, 61, 0, 1);
+    padding: 1em;
+    color: rgba(255, 255, 255, 1);
 }
