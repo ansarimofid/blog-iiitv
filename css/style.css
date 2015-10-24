@@ -240,9 +240,10 @@ nav ul li.active {
     transition: all 1s;
 }
 
-.card-content>p{
-    color: rgba(0,0,0,0.8)
+.card-content>p {
+    color: rgba(0, 0, 0, 0.8)
 }
+
 .card h2 {
     margin-top: 0.65em;
     margin-bottom: 0.65em;
@@ -322,6 +323,7 @@ nav ul li.active {
     padding: 0.5em 1em;
     border-radius: 2em;
     color: rgba(0, 0, 0, 0.7);
+    margin: 0.2em 0.1em;
 }
 
 
@@ -359,4 +361,37 @@ footer {
     background-color: rgba(255, 61, 0, 1);
     padding: 1em;
     color: rgba(255, 255, 255, 1);
+}
+
+
+
+/*************************
+** Media Query **
+**************************/
+
+@media (max-width:624px) {
+    .contents .card {
+        width: 100%;
+    }
+    body {
+        font-size: 12px;
+    }
+}
+
+@media (min-width:625px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media (min-width:665px) {
+    body {
+        font-size: 12.5px;
+    }
+}
+
+@media (min-width:768px) {
+    body {
+        font-size: 14px;
+    }
 }
