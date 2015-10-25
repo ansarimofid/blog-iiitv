@@ -140,7 +140,7 @@ header {
     font-family: 'Sacramento';
     font-size: 9em;
     margin: 0px;
-    color: rgb(255, 61, 0);
+    /*    color: rgb(255, 61, 0);*/
 }
 
 .brand-blog {
@@ -249,7 +249,7 @@ nav ul li.active {
 .card h2 {
     margin-top: 0.65em;
     margin-bottom: 0.65em;
-    color: rgba(255, 61, 0, 1);
+    /*    color: rgba(255, 61, 0, 1);*/
 }
 
 .card,
@@ -271,11 +271,6 @@ nav ul li.active {
     padding: 2em 4em;
 }
 
-.card-content h5.more>a {
-    color: rgba(255, 61, 0, 1);
-    text-decoration: none;
-}
-
 .author {
     display: flex;
     align-items: center;
@@ -295,10 +290,6 @@ nav ul li.active {
 
 .author .author-name {
     font-size: 1.2em;
-}
-
-.primary-color {
-    color: rgba(255, 61, 0, 1);
 }
 
 .article-tag>ul,
@@ -348,12 +339,12 @@ nav ul li.active {
 .pagination>ul>li.active>a {
     color: white;
     padding: 0.25em 0.833em;
-    background-color: rgba(255, 61, 0, 1);
+    /*    background-color: rgba(255, 61, 0, 1);*/
     border-radius: 2em;
 }
 
 .pagination>ul>li>a {
-    color: rgba(255, 61, 0, 1);
+    /*    color: rgba(255, 61, 0, 1);*/
     font-weight: bold;
 }
 
@@ -363,7 +354,7 @@ nav ul li.active {
 **************************/
 
 footer {
-    background-color: rgba(255, 61, 0, 1);
+    /*    background-color: rgba(255, 61, 0, 1);*/
     padding: 1em;
     color: rgba(255, 255, 255, 1);
 }
@@ -379,7 +370,7 @@ footer {
 **************************/
 
 .article-header {
-    background-color: rgba(255, 61, 0, 1);
+    /*    background-color: rgba(255, 61, 0, 1);*/
     display: flex;
     color: rgba(255, 255, 255, 1);
     justify-content: center;
@@ -459,10 +450,6 @@ footer {
     font-size: 1.5em;
 }
 
-.author-info .name {
-    color: rgb(255, 61, 0);
-}
-
 .share-icon a {
     color: rgba(0, 0, 0, 0.7);
     font-size: 2em;
@@ -536,4 +523,75 @@ footer {
     .header-container {
         width: 50em;
     }
+}
+
+.primary-color {
+    color: rgba(255, 61, 0, 1) !important;
+}
+
+.primary-background {
+    background-color: rgba(255, 61, 0, 1) !important;
+}
+
+.color-picker {
+    padding: 0 1em;
+    display: flex;
+    transition: all 1s;
+}
+
+.color-picker >ul {
+    padding: 0;
+    margin: 0;
+}
+
+.color-picker >ul >li {
+    display: block;
+    list-style: none;
+}
+
+.color-picker >ul >li>a {
+    display: block;
+    width: 2em;
+    height: 2em;
+    margin: 0.3em 0;
+    border-radius: 2em;
+    border: 0.15em solid white;
+}
+
+.picker-container {
+    position: absolute;
+    right: 0;
+    top: 0.2em;
+}
+
+.picker-toggle {
+    margin-right: 0.5em!important;
+    background-color: transparent !important;
+    font-size: 2em!important;
+    color: rgba(0, 0, 0, 0.7);
+    border: 0 !important;
+}#article .picker-toggle{color: white;}
+
+.hide-picker {
+    margin-right: -3.5em;
+}
+
+.cyan {
+    background-color: rgb(0, 150, 136);
+}
+
+.orange {
+    background-color: rgb(255, 61, 0);
+}
+
+.green {
+    background-color: rgb(76, 175, 80);
+}
+
+.pink {
+    background-color: rgb(233, 30, 99);
+}
+
+.blue {
+    background-color: rgb(33, 150, 243);
 }

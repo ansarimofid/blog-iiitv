@@ -10,13 +10,40 @@
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="css/font-awesome.css">
+    <style class="dynamic-style"></style>
 </head>
 
 <body id="article">
     <!--    main wrapper-->
     <div class="wrapper">
-        <header class="article-header">
-           <div class="back-button"><a href="index.html"><i class="fa fa-arrow-circle-left"></i></a></div>
+        <div class="picker-container">
+            <div class="color-picker hide-picker">
+                <ul>
+                    <li>
+                        <a href="#" class="picker-toggle"><i class="fa fa-paint-brush"></i></a>
+                    </li>
+                </ul>
+                <ul id="picker">
+                    <li>
+                        <a href="#" class="cyan" data-color="cyan"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="orange" data-color="orange"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="green" data-color="green"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="pink" data-color="pink"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="blue" data-color="blue"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <header class="article-header primary-background">
+            <div class="back-button"><a href="index.html"><i class="fa fa-arrow-circle-left"></i></a></div>
             <div class="header-container">
                 <div class="title">
                     <h1>Lorem ipsum dolor sit.</h1>
@@ -51,7 +78,7 @@
                 <div class="author">
                     <img src="img/photo4.jpg" alt="">
                     <div class="author-info">
-                        <span class="name"><strong>Jenny</strong></span>
+                        <span class="primary-color"><strong>Jenny</strong></span>
                         <span>Web Designer</span>
                     </div>
                 </div>
@@ -69,7 +96,7 @@
 -->
         </div>
         <!--        footer-->
-        <footer><i class="fa fa-copyright"></i> 2015 ,created by ansarimofid</footer>
+        <footer class="primary-background"><i class="fa fa-copyright"></i> 2015 ,created by ansarimofid</footer>
     </div>
     <!--  Scripts-->
     <script src="js/jquery-2.1.4.min.js"></script>
