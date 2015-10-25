@@ -412,7 +412,7 @@ footer {
     width: 25%;
 }
 
-.aricle-container article p {
+.aricle-container >div> p {
     font-size: 1.3em;
 }
 
@@ -581,7 +581,6 @@ footer {
 /*************************
 **Primary Colors **********
 **************************/
-
 
 .primary-color {
     color: rgba(255, 61, 0, 1) !important;
