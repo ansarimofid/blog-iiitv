@@ -1,15 +1,31 @@
 $('document').ready(function () {
+
+    /*****************
+     ***Toogle Picker**
+     ******************/
     $('#picker li a').click(function () {
         var ch = $(this).attr('data-color');
         console.log(ch);
         changeColor(ch);
     });
 
+    /************************
+     ***Toggle Primary Color**
+     *************************/
     $('.picker-toggle').click(function () {
         $('.color-picker').toggleClass('hide-picker');
     });
+
+    /************************************
+     ***Random Switch Color on Page load**
+     *************************************/
     var pcolor = ['orange', 'pink', 'cyan', 'green', 'blue'];
     changeColor(pcolor[Math.floor(Math.random() * 5)]);
+
+
+    /*******************
+     ***Color Switcher**
+     ******************/
 
     function changeColor(ch) {
         var color = {

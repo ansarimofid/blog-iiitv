@@ -525,13 +525,10 @@ footer {
     }
 }
 
-.primary-color {
-    color: rgba(255, 61, 0, 1) !important;
-}
 
-.primary-background {
-    background-color: rgba(255, 61, 0, 1) !important;
-}
+/*************************
+** Color Picker **********
+**************************/
 
 .color-picker {
     padding: 0 1em;
@@ -570,10 +567,28 @@ footer {
     font-size: 2em!important;
     color: rgba(0, 0, 0, 0.7);
     border: 0 !important;
-}#article .picker-toggle{color: white;}
+}
+
+#article .picker-toggle {
+    color: white;
+}
 
 .hide-picker {
     margin-right: -3.5em;
+}
+
+
+/*************************
+**Primary Colors **********
+**************************/
+
+
+.primary-color {
+    color: rgba(255, 61, 0, 1) !important;
+}
+
+.primary-background {
+    background-color: rgba(255, 61, 0, 1) !important;
 }
 
 .cyan {
