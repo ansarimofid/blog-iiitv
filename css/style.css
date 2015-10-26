@@ -480,6 +480,10 @@ footer {
     .author-share {
         width: 100%;
     }
+    .contents{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
 }
 
 @media (min-width:625px) {
@@ -559,6 +563,7 @@ footer {
     position: absolute;
     right: 0;
     top: 0.2em;
+    overflow: hidden;
 }
 
 .picker-toggle {
@@ -574,6 +579,7 @@ footer {
 }
 
 .hide-picker {
+    overflow: hidden;
     margin-right: -3.5em;
 }
 

@@ -5,7 +5,7 @@ $('document').ready(function () {
      ******************/
     $('#picker li a').click(function () {
         var ch = $(this).attr('data-color');
-        console.log(ch);
+//        console.log(ch);
         changeColor(ch);
     });
 
