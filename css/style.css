@@ -191,6 +191,11 @@ nav>ul>li>a:hover {
     background-color: rgba(239, 243, 243, 1);
     display: flex;
     justify-content: center;
+/*    overflow:hidden;*/
+}
+
+#article .main-container{
+    overflow: hidden;
 }
 
 nav>ul {
