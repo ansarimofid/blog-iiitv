@@ -1,8 +1,8 @@
 # IIITV Blog Theme
 ##Features
-+ minimal
-+ light
++ Minimal Design
++ Light
 + Card based Feed
 + Customizable
 
-##[Demo](http://ansarimofid.github.io/portfolio)
+##[Demo](http://ansarimofid.github.io/blog-iiitv)
