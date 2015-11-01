@@ -364,9 +364,15 @@ footer {
     color: rgba(255, 255, 255, 1);
 }
 
-.back-button {
-    position: absolute;
-    font-size: 4em;
+.home-button {
+    /*position: absolute;
+    font-size: 2em;
+    right:4em;
+    top: 0.2em;*/
+    font-size: 2.7em;
+    top: 0.2em;
+    /* margin-top: 0.4em; */
+    color: white;
 }
 
 
@@ -379,21 +385,23 @@ footer {
     display: flex;
     color: rgba(255, 255, 255, 1);
     justify-content: center;
-    padding-bottom: 4em;
+    padding-bottom: 3em;
     align-items: center;
 }
 
 .article-header .title h1 {
     margin-bottom: 0;
+    margin-top: 1.4em;
 }
 
 .article-header .article-tag {
     text-align: left;
+    margin-top: 1.5em;
 }
 
 .article-header .author span {
     color: white;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0.5em 0;
 }
 
@@ -412,7 +420,9 @@ footer {
     width: 50em;
     text-align: left;
 }
-
+.aricle-container{
+    margin: 2em 0 1em 0;
+}
 .side-right {
     width: 25%;
 }
@@ -445,6 +455,7 @@ footer {
     padding: 0.5em 4em;
     display: flex;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
+    flex-direction: column;
 }
 
 .author-info {
@@ -452,7 +463,10 @@ footer {
     flex-direction: column;
     text-align: left;
     margin-left: 0.75em;
-    font-size: 1.5em;
+/*    font-size: 1.5em;*/
+}
+.author-info >span:first-child{
+    font-size: 1.5em !important;
 }
 
 .share-icon a {
@@ -529,7 +543,7 @@ footer {
 
 @media (min-width:992px) {
     .aricle-container,
-    .header-container {
+    .header-container,.author-share {
         width: 50em;
     }
 }
@@ -619,4 +633,16 @@ footer {
 
 .blue {
     background-color: rgb(33, 150, 243);
+}
+
+.author-share-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.author-bio {
+    text-align: left;
 }
