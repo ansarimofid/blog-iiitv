@@ -36,6 +36,17 @@
 ** General Style **
 *******************/
 
+body#archive,html,#archive .wrapper{
+    min-height: 100%;
+    height: 100%;
+}
+
+#archive .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 body {
     font-family: 'Oxygen';
     text-align: center;
@@ -83,7 +94,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.64;
+    font-size: 1.64em;
     margin: 0.8em 0 0.656em 0;
 }
 
@@ -234,7 +245,7 @@ nav ul li.active {
 ** Card Style **
 ****************/
 
-.contents .card {
+.card {
     display: flex;
     width: 50em;
     min-height: 25em;
@@ -410,24 +421,24 @@ footer {
 ******Article Body *******
 **************************/
 
-.aricle-container,
+.article-container,
 .article-header .title {
     display: flex;
 }
 
-.aricle-container,
+.article-container,
 .header-container {
     width: 50em;
     text-align: left;
 }
-.aricle-container{
+.article-container{
     margin: 2em 0 1em 0;
 }
 .side-right {
     width: 25%;
 }
 
-.aricle-container >div> p {
+.article-container >div> p {
     font-size: 1.3em;
 }
 
@@ -485,7 +496,7 @@ footer {
 **************************/
 
 @media (max-width:624px) {
-    .contents .card {
+    .card {
         width: 100%;
     }
     body {
@@ -494,14 +505,15 @@ footer {
     .article-tag>ul {
         display: none;
     }
-    .aricle-container,
+    .article-container,
     .header-container,
-    .author-share {
+    .author-share ,.archive-contents .card{
         width: 100%;
     }
     .contents{
         padding-left: 1em;
         padding-right: 1em;
+        width: 100%;
     }
 }
 
@@ -509,9 +521,9 @@ footer {
     body {
         font-size: 12px;
     }
-    .aricle-container,
+    .article-container,
     .header-container,
-    .author-share {
+    .author-share,.archive-contents .card{
         width: 37em;
     }
 }
@@ -520,30 +532,27 @@ footer {
     body {
         font-size: 12.5px;
     }
-    .aricle-container,
+    .article-container,
     .header-container,
-    .author-share {
+    .author-share,.archive-contents .card{
         width: 40em;
     }
 }
 
 @media (min-width:768px) {
+    .article-container,
+    .header-container,
+    .author-share,.archive-contents .card{
+        width: 45em;
+    }
     body {
         font-size: 14px;
     }
 }
 
-@media (min-width:768px) {
-    .aricle-container,
-    .header-container,
-    .author-share {
-        width: 45em;
-    }
-}
-
 @media (min-width:992px) {
-    .aricle-container,
-    .header-container,.author-share {
+    .article-container,
+    .header-container,.author-share,.archive-contents .card{
         width: 50em;
     }
 }
@@ -593,7 +602,7 @@ footer {
     border: 0 !important;
 }
 
-#article .picker-toggle {
+#article .picker-toggle,#archive .picker-toggle {
     color: white;
 }
 
@@ -645,4 +654,43 @@ footer {
 
 .author-bio {
     text-align: left;
+}
+
+.archive-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2.5em;
+    color: white;
+}
+
+.archive-header > .title >h1 {
+    margin: 0.7em 0;
+    font-size: 4em;
+}
+
+#archive header{
+    display: flex;
+    justify-content:center;
+}
+
+#archive .article-tag>ul>li>a {
+    padding: 0.2em 0.7em;
+    border-radius: 0;
+}
+
+.card-simple {
+    min-height: inherit;
+    margin-top: 1em;
+    box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.7);
+}
+
+.card-simple .card-content {
+    padding: 1.5em 3em;
+}
+
+.card-simple .card-title h3{
+    margin: 0;
+    margin-bottom: 0.2em;
 }
