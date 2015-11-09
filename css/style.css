@@ -432,7 +432,7 @@ footer {
     text-align: left;
 }
 .article-container{
-    margin: 2em 0 1em 0;
+    margin: 2em 0 2em 0;
 }
 .side-right {
     width: 25%;
@@ -507,7 +507,7 @@ footer {
     }
     .article-container,
     .header-container,
-    .author-share ,.archive-contents .card{
+    .author-share ,.archive-contents .card,#disqus_thread{
         width: 100%;
     }
     .contents{
@@ -523,7 +523,7 @@ footer {
     }
     .article-container,
     .header-container,
-    .author-share,.archive-contents .card{
+    .author-share,.archive-contents .card,#disqus_thread{
         width: 37em;
     }
 }
@@ -534,7 +534,7 @@ footer {
     }
     .article-container,
     .header-container,
-    .author-share,.archive-contents .card{
+    .author-share,.archive-contents .card,#disqus_thread{
         width: 40em;
     }
 }
@@ -542,7 +542,7 @@ footer {
 @media (min-width:768px) {
     .article-container,
     .header-container,
-    .author-share,.archive-contents .card{
+    .author-share,.archive-contents .card,#disqus_thread{
         width: 45em;
     }
     body {
@@ -552,7 +552,7 @@ footer {
 
 @media (min-width:992px) {
     .article-container,
-    .header-container,.author-share,.archive-contents .card{
+    .header-container,.author-share,.archive-contents .card,#disqus_thread{
         width: 50em;
     }
 }
@@ -693,4 +693,8 @@ footer {
 .card-simple .card-title h3{
     margin: 0;
     margin-bottom: 0.2em;
+}
+
+#disqus_thread {
+    padding-bottom: 2em;
 }
