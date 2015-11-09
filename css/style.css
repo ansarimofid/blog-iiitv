@@ -515,6 +515,9 @@ footer {
         padding-right: 1em;
         width: 100%;
     }
+    #article .share-icon{
+        display: none;
+    }
 }
 
 @media (min-width:625px) {
@@ -696,5 +699,5 @@ footer {
 }
 
 #disqus_thread {
-    padding-bottom: 2em;
+    padding: 2em 0;
 }
