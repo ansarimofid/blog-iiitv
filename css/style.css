@@ -23,15 +23,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    /*    src: url(../fonts/material-design-icons/Material-Design-Icons.ttf);*/
-    src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts/material-design-icons/Material-Design-Icons.woff2) format('woff2'), url(../fonts/material-design-icons/Material-Design-Icons.woff) format('woff'), url(../fonts/material-design-icons/Material-Design-Icons.ttf) format('truetype');
-}
-
-
 /******************
 ** General Style **
 *******************/
