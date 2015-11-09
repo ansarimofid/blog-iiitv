@@ -619,14 +619,6 @@ footer {
 **Primary Colors **********
 **************************/
 
-.primary-color {
-    color: rgba(255, 61, 0, 1) !important;
-}
-
-.primary-background {
-    background-color: rgba(255, 61, 0, 1) !important;
-}
-
 .cyan {
     background-color: rgb(0, 150, 136);
 }

@@ -17,10 +17,8 @@ $('document').ready(function () {
     });
 
     /************************************
-     ***Random Switch Color on Page load**
+     ***Load page color**
      *************************************/
-    // var pcolor = ['orange', 'pink', 'cyan', 'green', 'blue'];
-    // changeColor(pcolor[Math.floor(Math.random() * 5)]);
     if (getCookie("color") == ""){
         changeColor("cyan");
     } else {
@@ -45,6 +43,10 @@ $('document').ready(function () {
     }
 });
 
+
+/* ********************************
+** Functions to set and get Cookies
+**********************************/
 
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
