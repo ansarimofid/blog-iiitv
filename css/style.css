@@ -212,11 +212,14 @@ nav>ul>li {
 }
 
 nav ul li:hover,
-nav ul li.active {
+nav ul li.active{
     background-color: transparent;
     border-bottom: 3px solid rgba(0, 0, 0, 0.3);
 }
+#home li[data-href="home"] {
+    border-bottom: 3px solid rgba(0, 0, 0, 0.4);
 
+}
 
 /*************************
 ** Main container Style **
@@ -701,4 +704,86 @@ footer {
     .header-container,.author-share,.archive-contents .card,#disqus_thread{
         width: 50em;
     }
+}
+
+#about {
+    background: white;
+}
+
+#about .main-container{
+    background: white;
+}
+
+#about .brand-iiitv {
+    margin-left: 0.12em;
+}
+
+#about .brand-blog{
+    margin-left: 0;
+}
+
+.institute-pic img{
+    width: 20em;
+}
+
+.institute {
+    display: flex;
+    padding: 0 2em 2em 2em;
+}
+
+
+.institute-info {
+    text-align: justify;
+    margin-left: 2em;
+}
+
+.institute-info p{
+    margin: 0;
+}
+
+.title-container .title{
+    padding:  0 1.5em;
+    }
+.institute-container .title>h2{
+    margin: 0;
+}
+
+.institute-container {
+    width: 50em;
+/*    padding: 3em 2em 2em 2em;*/
+    border: 1px solid rgba(0,0,0,0.3);
+    border-width: 0 1px 1px 1px;
+/*    padding-top: 0;*/
+}
+
+#about .home-button {
+    color:rgba(0, 0, 0, 0.701961)
+}
+
+.title-container {
+    display: flex;
+    top: -2em;
+    position: relative;
+}
+
+.title-left {
+    width: 30em;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.title-right {
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    flex-grow: 1;
+}
+
+.title-right,.title-left{
+    margin-bottom: 1.2em;
+}
+
+#about .contents {
+    margin-top: 8em;
+}
+
+#about .brand-container {
+    border-bottom: 1px solid rgba(0,0,0,0.3);
 }
