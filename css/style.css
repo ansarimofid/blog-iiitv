@@ -23,16 +23,19 @@
     font-style: normal;
 }
 
+
 /******************
 ** General Style **
 *******************/
 
-body#archive,html,#archive .wrapper{
+body#archive,
+html,
+#archive .wrapper {
     min-height: 100%;
     height: 100%;
 }
 
-#archive .wrapper{
+#archive .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -195,7 +198,7 @@ nav>ul>li>a:hover {
     align-items: flex-start;
 }
 
-#article .main-container{
+#article .main-container {
     overflow: hidden;
 }
 
@@ -212,14 +215,15 @@ nav>ul>li {
 }
 
 nav ul li:hover,
-nav ul li.active{
+nav ul li.active {
     background-color: transparent;
     border-bottom: 3px solid rgba(0, 0, 0, 0.3);
 }
+
 #home li[data-href="home"] {
     border-bottom: 3px solid rgba(0, 0, 0, 0.4);
-
 }
+
 
 /*************************
 ** Main container Style **
@@ -283,7 +287,6 @@ nav ul li.active{
     display: flex;
     align-items: center;
 }
-
 
 .author img {
     border-radius: 4em;
@@ -414,9 +417,11 @@ footer {
     width: 50em;
     text-align: left;
 }
-.article-container{
+
+.article-container {
     margin: 2em 0 2em 0;
 }
+
 .side-right {
     width: 25%;
 }
@@ -441,6 +446,7 @@ footer {
 /********************************
 ******Article Author-Share*******
 *********************************/
+
 .author-share-container {
     display: flex;
     width: 100%;
@@ -463,14 +469,15 @@ footer {
     text-align: left;
     margin-left: 0.75em;
     margin-right: 2em;
-/*    font-size: 1.5em;*/
+    /*    font-size: 1.5em;*/
 }
-.author-info >span:first-child{
+
+.author-info >span:first-child {
     font-size: 1.5em !important;
 }
 
-.share-icon{
-
+.profile .share-icon {
+    padding: 0.7em 0;
 }
 
 .share-icon a {
@@ -483,11 +490,11 @@ footer {
     color: rgba(0, 0, 0, 0.95);
 }
 
-#article .author{
+#article .author {
     align-items: flex-start;
 }
 
-#article .author-info{
+#article .author-info {
     text-align: justify;
 }
 
@@ -496,6 +503,7 @@ footer {
     display: flex;
     justify-content: flex-end;
 }
+
 
 /*************************
 ** Color Picker **********
@@ -541,7 +549,8 @@ footer {
     border: 0 !important;
 }
 
-#article .picker-toggle,#archive .picker-toggle {
+#article .picker-toggle,
+#archive .picker-toggle {
     color: white;
 }
 
@@ -575,10 +584,10 @@ footer {
     background-color: rgb(33, 150, 243);
 }
 
-
 .author-bio {
     text-align: left;
 }
+
 
 /***************
 ** Archive Style **
@@ -598,9 +607,9 @@ footer {
     font-size: 4em;
 }
 
-#archive header{
+#archive header {
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 
 #archive .article-tag>ul>li>a {
@@ -622,7 +631,7 @@ footer {
     padding: 1.5em 3em;
 }
 
-.card-simple .card-title h3{
+.card-simple .card-title h3 {
     margin: 0;
     margin-bottom: 0.2em;
 }
@@ -631,9 +640,140 @@ footer {
     padding: 2em 0;
 }
 
+
+/*************************
+** About **
+**************************/
+
+#about {
+    background: white;
+}
+
+#about .main-container {
+    background: white;
+}
+
+#about .brand-iiitv {
+    margin-left: 0.12em;
+}
+
+#about .brand-blog {
+    margin-left: 0;
+}
+
+.institute-pic img {
+    width: 20em;
+}
+
+.institute {
+    display: flex;
+    padding: 0 2em 2em 2em;
+}
+
+.institute-info {
+    text-align: justify;
+    margin-left: 2em;
+}
+
+.institute-info p {
+    margin: 0;
+}
+
+.title-container .title {
+    padding: 0 1.5em;
+}
+
+.title-container .title>h2 {
+    margin: 0;
+}
+
+.institute-container,
+.blog-container,
+.team-container {
+    width: 100%;
+    /*    padding: 3em 2em 2em 2em;*/
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-width: 0 1px 1px 1px;
+    /*    padding-top: 0;*/
+}
+
+#about .home-button {
+    color: rgba(0, 0, 0, 0.701961)
+}
+
+.title-container {
+    display: flex;
+    top: -2em;
+    position: relative;
+}
+
+.dash-lg {
+    width: 30em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.dash-sm {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    flex-grow: 1;
+}
+
+.dash-lg,
+.dash-sm {
+    margin-bottom: 1.2em;
+}
+
+#about .contents {
+    margin-top: 8em;
+    margin-bottom: 8em;
+    width: 50em;
+    box-sizing: border-box;
+}
+
+#about .brand-container {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding-bottom: 1.5em;
+    padding-top: 2em;
+}
+
+.blog-container,
+.team-container {
+    margin-top: 10em;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-container .institute {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile img {
+    width: 15em;
+}
+
+.blog-info,
+.team-info {
+    text-align: justify;
+    /*    margin-left: 2em*/
+}
+
+.profile {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+
 /*************************
 ** Media Query **
 **************************/
+
+@media (max-width:480px) {
+    .profile img {
+        width: 12em;
+    }
+}
 
 @media (max-width:624px) {
     .card {
@@ -647,23 +787,27 @@ footer {
     }
     .article-container,
     .header-container,
-    .author-share ,.archive-contents .card,#disqus_thread{
-        width: 100%;
+    .author-share,
+    .archive-contents .card,
+    #disqus_thread {
+        width: 100% !important;
     }
-    .contents{
+    .contents,
+    #about .contents {
         padding-left: 1em;
         padding-right: 1em;
-        width: 100%;
+        width: 100% !important;
     }
-    #article .share-icon{
+    #article .share-icon {
         display: none;
     }
-
     .hide-picker {
-    overflow: hidden;
-    margin-right: -7.5em;
-}
-
+        overflow: hidden;
+        margin-right: -7.5em;
+    }
+    .institute-pic img {
+        width: 14em;
+    }
 }
 
 @media (min-width:625px) {
@@ -671,9 +815,15 @@ footer {
         font-size: 12px;
     }
     .article-container,
+    #about .contents,
     .header-container,
-    .author-share,.archive-contents .card,#disqus_thread{
+    .author-share,
+    .archive-contents .card,
+    #disqus_thread {
         width: 37em;
+    }
+    .institute-pic img {
+        width: 16em;
     }
 }
 
@@ -682,16 +832,22 @@ footer {
         font-size: 12.5px;
     }
     .article-container,
+    #about .contents,
     .header-container,
-    .author-share,.archive-contents .card,#disqus_thread{
+    .author-share,
+    .archive-contents .card,
+    #disqus_thread {
         width: 40em;
     }
 }
 
 @media (min-width:768px) {
     .article-container,
+    #about .contents,
     .header-container,
-    .author-share,.archive-contents .card,#disqus_thread{
+    .author-share,
+    .archive-contents .card,
+    #disqus_thread {
         width: 45em;
     }
     body {
@@ -701,89 +857,11 @@ footer {
 
 @media (min-width:992px) {
     .article-container,
-    .header-container,.author-share,.archive-contents .card,#disqus_thread{
+    #about .contents,
+    .header-container,
+    .author-share,
+    .archive-contents .card,
+    #disqus_thread {
         width: 50em;
     }
-}
-
-#about {
-    background: white;
-}
-
-#about .main-container{
-    background: white;
-}
-
-#about .brand-iiitv {
-    margin-left: 0.12em;
-}
-
-#about .brand-blog{
-    margin-left: 0;
-}
-
-.institute-pic img{
-    width: 20em;
-}
-
-.institute {
-    display: flex;
-    padding: 0 2em 2em 2em;
-}
-
-
-.institute-info {
-    text-align: justify;
-    margin-left: 2em;
-}
-
-.institute-info p{
-    margin: 0;
-}
-
-.title-container .title{
-    padding:  0 1.5em;
-    }
-.institute-container .title>h2{
-    margin: 0;
-}
-
-.institute-container {
-    width: 50em;
-/*    padding: 3em 2em 2em 2em;*/
-    border: 1px solid rgba(0,0,0,0.3);
-    border-width: 0 1px 1px 1px;
-/*    padding-top: 0;*/
-}
-
-#about .home-button {
-    color:rgba(0, 0, 0, 0.701961)
-}
-
-.title-container {
-    display: flex;
-    top: -2em;
-    position: relative;
-}
-
-.title-left {
-    width: 30em;
-    border-bottom: 1px solid rgba(0,0,0,0.3);
-}
-
-.title-right {
-    border-bottom: 1px solid rgba(0,0,0,0.3);
-    flex-grow: 1;
-}
-
-.title-right,.title-left{
-    margin-bottom: 1.2em;
-}
-
-#about .contents {
-    margin-top: 8em;
-}
-
-#about .brand-container {
-    border-bottom: 1px solid rgba(0,0,0,0.3);
 }
